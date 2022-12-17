@@ -33,7 +33,7 @@ public:
                     revPol.pop();
                     b = revPol.top();
                     revPol.pop();
-                    revPol.push(a - b);
+                    revPol.push(b-a);
                 }
                 else if (tokens.at(i) == "*")
                 {
@@ -51,7 +51,7 @@ public:
                     revPol.pop();
                     b = revPol.top();
                     revPol.pop();
-                    revPol.push(a / b);
+                    revPol.push(b / a);
                 }
                 else
                 {
@@ -65,7 +65,7 @@ public:
 
 int main(int argc, char const *argv[])
 {
-    vector<string> tokens = {"4", "13", "5", "/", "+"};
+    vector<string> tokens = {"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"};
     Solution newSol;
     cout << newSol.evalRPN(tokens);
     return 0;
