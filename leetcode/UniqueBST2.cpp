@@ -3,7 +3,7 @@ using namespace std;
 
 class Solution {
 public:
-    int jump(vector<int>& nums) {
+    vector<TreeNode*> generateTrees(int n) {
         
     }
 };
