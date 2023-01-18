@@ -13,17 +13,6 @@ public:
             }
         }
         if(nums.size()==1 && k%2!=0) return -1;
-        // if(indexMaxVal%2!=0 && k%2==0 && indexMaxVal>=k-1){
-        //     int nLeft=INT_MIN,nRight=INT_MIN;
-        //     indexMaxVal>=1?nLeft=nums[indexMaxVal-1]:nLeft=nLeft;
-        //     indexMaxVal<nums.size()-2?nRight=nums[indexMaxVal+1]:nRight=nRight;
-        //     if(nLeft>nRight){
-        //         return nLeft;
-        //     }else{
-        //         return nRight;
-        //     }
-        // }
-        // return nums[indexMaxVal];
         if(k==indexMaxVal) return nums[indexMaxVal];
         if(k>nums.size()){
             if((k%2==0 && indexMaxVal%2==0) || (k%2!=0 && indexMaxVal%2!=0)) return nums[indexMaxVal];
